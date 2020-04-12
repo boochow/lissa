@@ -61,7 +61,7 @@ void DELFX_PROCESS(float *xn, uint32_t frames)
         break;
     case 2:
         len_z = linintf(0.00004f, len_z, len);
-        wave = amp * s_delay.readFrac(len_z);
+        wave = 2.5 * amp * s_delay.readFrac(len_z);
         break;
     default:
         break;
@@ -89,11 +89,11 @@ void DELFX_PARAM(uint8_t index, int32_t value)
       amp = valf;
     break;
   case k_user_delfx_param_shift_depth:
-      if (valf <= 0.249) {
-          offset = valf * M_PI;
+      if (valf <= 0.4) {
+          offset = valf * 2.5 - 0.5;
           lfo_type = 0;
-      } else if (valf >= 0.501) {
-          offset = (1.0 - valf) * M_PI;
+      } else if (valf >= 0.6) {
+          offset = (1.0 - valf) * 2.5;
           lfo_type = 1;
       } else {
           lfo_type = 2;
