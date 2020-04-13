@@ -14,7 +14,13 @@
 // longest delay is wave length/4 = 1/(8.2 * 4).
 // so 1/32 sec is sufficient for delay buffer.
 #define BUFSIZE 1500
-#define DEFAULTFREQ 220.f
+
+// lfo default frequency. Actually, this value is not used
+// because lfo freqency is changed by DELFX_PARAM() when
+// the delay instance is started and its value is always 330
+// (frequency of MIDI note #64, which is 0.5*128)
+#define DEFAULTFREQ 330
+
 static dsp::DelayLine s_delay;
 
 static __sdram float s_delay_ram[BUFSIZE];
