@@ -21,19 +21,19 @@ Lissa delay is mainly for fun and educational purposes. It is almost useless for
 
 1. Press the DELAY button then select "LiSa" with the TYPE knob.
 
-1. Adjust the aspect ratio of Lissajous figure with the B knob.
+1. Adjust the aspect ratio of the Lissajous figure with the B knob.
 
-1. Press DELAY button and keep it pressed. Then turn clockwise the B knob to change sweep signal to a sawtooth wave.
+1. Press the DELAY button and keep it pressed. Then turn clockwise the B knob to change sweep signal to a sawtooth wave.
 
 1. Adjust the pitch of the sweep signal (left channel) to the same value with the input signal (right channel).
 
-1. Again press DELAY button and keep it pressed. Tweak the B knob and watch how the figure is changed. Then modify the tone of input sound by the filter, OSC parameters, etc. and look at how it is reflected on the screen.
+1. Again press the DELAY button and keep it pressed. Tweak the B knob and watch how the figure is changed. Then modify the tone of input sound by the filter, OSC parameters, etc. and look at how it is reflected on the screen.
 
 ## Parameters
 
 ### Time
 
-To synchronize the input signal and the sweep signal, you have to tune sweep signal manually. That is done by the Time parameter, which is assigned to the knob A in the case of NTS1.
+To synchronize the input signal and the sweep signal, you have to tune the sweep signal manually. That is done by the Time parameter, which is assigned to the knob A in the case of NTS1.
 
 The time parameter varies from 0 to 127. This value represents a MIDI note number, which is used to determine the sweep signal frequency.
 
