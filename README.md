@@ -3,7 +3,7 @@
 ## About
 Lissa is a delay module for Korg Nu:Tekt NTS1 and other synthesizers compatible with [logue SDK](https://github.com/korginc/logue-sdk).
 
-The main purpose of Lissa is to generate a sweep signal to display the waveform of the input signal on an oscilloscope as a [Lissajous figure](https://en.wikipedia.org/wiki/Lissajous_curve).
+The primary purpose of Lissa is to generate a sweep signal to display the waveform of the input signal on an oscilloscope as a [Lissajous figure](https://en.wikipedia.org/wiki/Lissajous_curve).
 
 [![top-page](https://raw.githubusercontent.com/boochow/lissa/image/vpm.gif)](https://www.youtube.com/watch?v=_FJFkW42QLE)
 
