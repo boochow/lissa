@@ -5,7 +5,7 @@ Lissa is a delay module for Korg Nu:Tekt NTS1 and other synthesizers compatible 
 
 The main purpose of Lissa is to generate a sweep signal to display wave form of input signal on an oscilloscpe as a [Lissajous figure](https://en.wikipedia.org/wiki/Lissajous_curve).
 
-[![top-page](https://raw.githubusercontent.com/boochow/lissa/images/vpm.gif)](https://www.youtube.com/watch?v=_FJFkW42QLE)
+[![top-page](https://raw.githubusercontent.com/boochow/lissa/image/vpm.gif)](https://www.youtube.com/watch?v=_FJFkW42QLE)
 
 Lissa passes the input signal to the right channel of output with no change. The left channel is used for sweep signal which is one of sine wave, sawtooth wave, or the input signal with 90 degrees delay.
 
