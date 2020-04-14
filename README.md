@@ -25,10 +25,26 @@ Lissa delay is mainly for fun and educational purposes. It is almost useless for
 
 1. Adjust the pitch of sweep signal (left channel) to the same value with input signal (right channel).
 
-1. Again press DELAY button and keep it pressed. Tweak the B knob and watch how the figure is changed. Modify the tone of input sound by the filter, OSC parameters, etc. and look how it is reflected on the screen.
+1. Again press DELAY button and keep it pressed. Tweak the B knob and watch how the figure is changed. Then modify the tone of input sound by the filter, OSC parameters, etc. and look how it is reflected on the screen.
 
 ## Parameters
 
+### Time
+
 To synchronize input signal and sweep signal, you have to tune sweep signal manually. That is done by Time parameter which is assigned to the knob A in the case of NTS1.
 
-As time parameter changes, the frequency of sweep signal changes stepwise. The parameter value is between 0 and 127. The frequency of sweep signal become that of the time parameter value as MIDI note number.
+The time parameter varies from 0 to 127. This value represents a MIDI note number, which is used to determing the sweep signal frequency.
+
+### Depth
+
+The depth parameter controls amplitude of the sweep signal.
+
+### Shift-Depth
+
+The shift-depth parameter changes the wave form of sweep signal and its time offset. The shift-depth parameter is between 0.0 and 1.0. The default value is 0.5.
+The wave form and time offset become as follows depending on the shit-depth value.
+
++ 0.0 .. 0.4: sweep signal is sine wave. offset varies from -0.5 to 0.5.
++ 0.4 .. 0.6: sweep signal is delayed input signal. The length of delay is quarter of wave length which is determined by the time parameter.
++ 0.6 .. 1.0: sweep signal is sine wave. offset varies from -0.5 to 0.5.
+
