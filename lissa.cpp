@@ -31,6 +31,12 @@ static dsp::SimpleLFO s_lfo;
 static const float s_fs_recip = 1.f / 48000.f;
 static float amp = 1.0;
 static float offset = 0;
+
+enum {
+    SWEEP_SINE = 0,
+    SWEEP_SAW = 1,
+    SWEEP_IN = 2,
+};
 static int32_t lfo_type = 0;
 
 void DELFX_INIT(uint32_t platform, uint32_t api)
@@ -60,13 +66,13 @@ void DELFX_PROCESS(float *xn, uint32_t frames)
     s_lfo.cycle();
     
     switch(lfo_type) {
-    case 0:
+    case SWEEP_SINE:
         wave = amp * s_lfo.sine_bi_off(offset);
         break;
-    case 1:
+    case SWEEP_SAW:
         wave = amp * s_lfo.saw_bi_off(offset);
         break;
-    case 2:
+    case SWEEP_IN:
         len_z = linintf(0.00004f, len_z, len);
         wave = 2.5 * amp * s_delay.readFrac(len_z);
         break;
@@ -98,12 +104,12 @@ void DELFX_PARAM(uint8_t index, int32_t value)
   case k_user_delfx_param_shift_depth:
       if (valf <= 0.4) {
           offset = valf * 2.5 - 0.5;   /* offset = -0.5 .. 0.5 */
-          lfo_type = 0;
+          lfo_type = SWEEP_SINE;
       } else if (valf >= 0.6) {
           offset = (1.0 - valf) * 2.5; /* offset = 0.0 .. 1.0 */
-          lfo_type = 1;
+          lfo_type = SWEEP_SAW;
       } else {
-          lfo_type = 2;
+          lfo_type = SWEEP_IN;
       }
     break;
   default:
