@@ -79,9 +79,10 @@ void DELFX_PROCESS(float *xn, uint32_t frames)
     default:
         break;
     }
-    s_delay.write(*x);
+    float in  = *x;
+    s_delay.write(in);
     *(x++) = wave;
-    *(x++);
+    *(x++) = in;
   }
   s_len_z = len_z;
 }
