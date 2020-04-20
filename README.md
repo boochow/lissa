@@ -23,7 +23,7 @@ Lissa delay is mainly for fun and educational purposes. It is almost useless for
 
 1. Adjust the aspect ratio of the Lissajous figure with the B knob.
 
-1. Press the DELAY button and keep it pressed. Then turn clockwise the B knob to change sweep signal to a sawtooth wave.
+1. Press the DELAY button and keep it pressed. Then turn the B knob clockwise to change the sweep signal to a sawtooth wave.
 
 1. Adjust the pitch of the sweep signal (left channel) to the same value with the input signal (right channel).
 
