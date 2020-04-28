@@ -51,3 +51,6 @@ The waveform and time offset become as follows, depending on the shit-depth valu
 + 0.4 .. 0.6: sweep signal is a delayed input signal. The length of the delay is a quarter of the wavelength, which is determined by the time parameter.
 + 0.6 .. 1.0: sweep signal is a sawtooth wave. Offset varies from 0.0 to 1.0.
 
+## How to build
+
+Place this directory under `logue-sdk/platform/nutekt-digital/` then type `make`.
