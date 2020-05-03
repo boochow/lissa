@@ -59,7 +59,7 @@ void DELFX_PROCESS(float *xn, uint32_t frames)
   float len_z = s_len_z;
 
   for (; x != x_e; ) {
-    len_z = linintf(0.00004f, len_z, len);
+    len_z = linintf(0.002f, len_z, len);
     const float r = s_delay.readFrac(len_z);
 
     float wave;
@@ -73,7 +73,6 @@ void DELFX_PROCESS(float *xn, uint32_t frames)
         wave = amp * s_lfo.saw_bi_off(offset);
         break;
     case SWEEP_IN:
-        len_z = linintf(0.00004f, len_z, len);
         wave = 2.5 * amp * s_delay.readFrac(len_z);
         break;
     default:
