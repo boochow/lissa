@@ -54,3 +54,7 @@ The waveform and time offset become as follows, depending on the shit-depth valu
 ## How to build
 
 Place this directory under `logue-sdk/platform/nutekt-digital/` then type `make`.
+
+## Others
+
+My other user oscillators / modules are [here](https://blog.boochow.com/logue).
